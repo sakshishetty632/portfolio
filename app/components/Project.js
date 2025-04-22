@@ -1,30 +1,45 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight, FaGithub, FaExternalLinkAlt, FaLink } from "react-icons/fa";
 export const Project = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const cards = [
         {
-            title: "Project 1",
-            img: "https://dummyimage.com/320x200",
-            desc: "Photo booth fam kinfolk cold-pressed sriracha...",
+            title: "LearnTrack",
+            img: "/LearnTrack.jpg",
+            desc: "LearnTrack is a student report management app built with Angular and Spring Boot, providing seamless tracking and management of academic performance.",
+            liveLink:"http://localhost:4200/report/new",
+            githubLink: "https://github.dev/sakshishetty632/form-report-client",
         },
         {
-            title: "Project 2",
-            img: "https://dummyimage.com/320x200",
-            desc: "Photo booth fam kinfolk cold-pressed sriracha...",
+            title: "MAAS",
+            img: "/Maas.jpg",
+            desc: "MaaS is a lightweight, scalable solution for real-time system monitoring, tracking CPU, memory, disk usage, and service health with a centralized dashboard and alerting.",
+            liveLink:"",
+            githubLink: "https://github.com/sakshishetty632/monitoring-as-a-service",
         },
         {
-            title: "Project 3",
-            img: "https://dummyimage.com/320x200",
-            desc: "Photo booth fam kinfolk cold-pressed sriracha...",
+            title: "QR Code Generator",
+            img: "/QRCodeGenerator.jpg",
+            desc: "The QR Code Generator is a Flask and Python-based tool that converts URLs into scannable QR codes, displayed as SVG images.",
+            liveLink:"https://qr-code-generator-7w2j.onrender.com",
+            githubLink: "https://github.com/sakshishetty632/qr-generator",
         },
         {
-            title: "Project 4",
-            img: "https://dummyimage.com/320x200",
-            desc: "Photo booth fam kinfolk cold-pressed sriracha...",
+            title: "YouTube Downloader",
+            img: "/YoutubeDownloader.jpg",
+            desc: "The YouTube Video Downloader is a Flask-based app using yt-dlp to download YouTube videos in various formats with ease.",
+            liveLink:"",
+            githubLink: "https://github.com/sakshishetty632/youtube-downloader",
+        },
+        {
+            title: "Instagram Clone",
+            img: "/igclone.jpg",
+            desc: "The Instagram Clone is a web app built with HTML and CSS, replicating the core design and layout of the Instagram platform.",
+            liveLink:"https://sakshi-shetty-instagram-clone.vercel.app/",
+            githubLink: "https://github.com/sakshishetty632/instagram-clone",
         },
     ];
 
@@ -33,21 +48,65 @@ export const Project = () => {
     const nextSlide = () =>
         setCurrentIndex((prev) => (prev === cards.length - 1 ? 0 : prev + 1));
 
+    useEffect(() => {
+        const handleMouseMove = (event) => {
+            const mouseX = event.clientX;
+            const mouseY = event.clientY;
+    
+            const anchor = document.getElementById('anchor');
+            const rekt = anchor.getBoundingClientRect();
+            const anchorX = rekt.left + rekt.width / 2;
+            const anchorY = rekt.top + rekt.height / 2;
+    
+            const dx = mouseX - anchorX;
+            const dy = mouseY - anchorY;
+    
+            const distance = Math.min(Math.sqrt(dx * dx + dy * dy), 50);
+            const angle = Math.atan2(dy, dx);
+            const offsetX = Math.cos(angle) * (distance / 32);
+            const offsetY = Math.sin(angle) * (distance / 32);
+    
+            const eyes = document.querySelectorAll('.eye');
+            eyes.forEach((eye) => {
+                eye.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+            });
+        };
+    
+        window.addEventListener('mousemove', handleMouseMove);
+    
+        const interval = setInterval(() => {
+            setCurrentIndex((prev) => (prev === cards.length - 1 ? 0 : prev + 1));
+        }, 1000); // Auto slide every 4 seconds
+    
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+            clearInterval(interval); // Cleanup interval on component unmount
+        };
+    }, [cards.length]);
+
     return (
         <section id="project" className="text-teal-700 flex flex-col mt-12 items-center justify-center relative">
-            <h2 className=" text-3xl sm:text-6xl  text-center w-full mt-18 mb-2">Projects</h2>
+            {/* <h2 className=" text-3xl sm:text-6xl text-center w-full mb-2">Projects</h2> */}
 
             {/* Overlapping Top Image */}
-            <div className="absolute top-38 left-1/2 transform -translate-x-1/2 z-10">
+            {/* <div className="relative"> */}
+            <div className="absolute top-26 left-1/2 transform -translate-x-1/2 z-10">
                 <img
+                    id="anchor"
                     src='/SakshiShettyProject.png'
                     alt="Top Character"
-                    className="w-50 h-50 object-contain"
+                    className="w-[280px] h-[280px] object-contain"
                 />
+
+                <div className="eyes">
+                    <img src="/eye.png" className="eye absolute top-[74.5px] left-[127px] h-[10px] w-[10px]" />
+                    <img src="/eye.png" className="eye absolute top-[73.5px] left-[171px] h-[10.3px] w-[10.3px]" />
+                </div>
             </div>
+            {/* </div> */}
 
             {/* Carousel */}
-            <div className="container px-20 pt-47 pb-20 mx-auto relative z-0">
+            <div className="container px-20 pt-[355px] pb-20 mx-auto relative z-0">
                 <div className="relative bg-gray-200 rounded-xl px-6 py-8">
                     {/* Navigation Arrows */}
                     <button
@@ -72,7 +131,7 @@ export const Project = () => {
                             .map((card, index) => (
                                 <div
                                     key={index}
-                                    className="w-full sm:w-1/4 sm:h-1/3 px-2 flex-shrink-0"
+                                    className="w-full h-40 sm:w-1/4 sm:h-1/3 px-2 flex-shrink-0"
                                 >
                                     <div className="group relative border-1 border-teal-700 border-opacity-20 rounded-lg overflow-hidden bg-white">
                                         <div className="relative">
@@ -99,21 +158,21 @@ export const Project = () => {
                                                 >
                                                     <FaGithub />
                                                 </a>
-                                                <a
+                                                {/* <a
                                                     href={card.thirdLink}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="text-gray-300 hover:text-white text-2xl"
                                                 >
                                                     <FaLink />
-                                                </a>
+                                                </a> */}
                                             </div>
 
                                         </div>
 
                                         <div className="p-2">
                                             <h1 className="title-font text-lg font-medium text-teal-900 mb-1">{card.title}</h1>
-                                            <p className="leading-relaxed mb-1">{card.desc}</p>
+                                            <p className="leading-relaxed mb-1 line-clamp-3">{card.desc}</p>
                                         </div>
                                     </div>
 

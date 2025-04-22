@@ -3,7 +3,7 @@ import React from 'react';
 export const Contact = () => {
   return (
     <section id="feedback" className="text-teal-700 body-font relative">
-    <h2 className=" text-3xl sm:text-6xl mb-1 text-center w-full mt-20">Contact Me</h2>
+    <h2 className=" text-3xl sm:text-6xl mb-1 text-center w-full mt-10">Contact Me</h2>
       <div className="container px-5 mx-auto flex sm:flex-nowrap flex-wrap">
       <div className="lg:w-[30rem]  md:w-1/2 w-5/6">
         <video
@@ -20,7 +20,7 @@ export const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="lg:w-1/2 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-2 mt-8 md:mt-0">
+        <div className="lg:w-1/2 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-2 mt-8 md:mt-0 mb-9">
           <p className="leading-relaxed mb-5 text-teal-700">
           Hey there! I'm always looking to learn and improve — if something stood out (good or bad), feel free to let me know. I truly appreciate it 💜
           </p>

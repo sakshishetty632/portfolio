@@ -25,7 +25,9 @@ module.exports = {
           heropattern: "url(/herobgc.jpg)",
         }
       },
-      plugins: [],
+      plugins: [
+        require('@tailwindcss/line-clamp'),
+      ],
     }
   }
   
