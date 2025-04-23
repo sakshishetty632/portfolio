@@ -74,13 +74,10 @@ export const Project = () => {
     
         window.addEventListener('mousemove', handleMouseMove);
     
-        const interval = setInterval(() => {
-            setCurrentIndex((prev) => (prev === cards.length - 1 ? 0 : prev + 1));
-        }, 1000); // Auto slide every 4 seconds
+        
     
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
-            clearInterval(interval); // Cleanup interval on component unmount
         };
     }, [cards.length]);
 
@@ -172,7 +169,7 @@ export const Project = () => {
 
                                         <div className="p-2">
                                             <h1 className="title-font text-lg font-medium text-teal-900 mb-1">{card.title}</h1>
-                                            <p className="leading-relaxed mb-1 line-clamp-3">{card.desc}</p>
+                                            <p className="leading-relaxed mb-1 line-clamp-2">{card.desc}</p>
                                         </div>
                                     </div>
 
