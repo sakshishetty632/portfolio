@@ -17,6 +17,9 @@
     --foreground: #ededed;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--background);
@@ -52,4 +55,28 @@ body {
 .highlightTextIn a:hover::before {
   transform: scale(1);
   opacity: 1;
+}
+body, html {
+  cursor: none;
+}
+
+.cursorInner,
+.cursorOuter {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.cursorOuter {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.6); /* Slight opacity */
+}
+
+.cursorInner {
+  width: 10px;
+  height: 10px;
+  background: teal;
 }

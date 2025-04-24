@@ -1,13 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from '@next/font/google';
 import "./globals.css";
-import { Poppins } from '@next/font/google'
+import AnimatedCursor from 'react-animated-cursor';
 
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '800'],
   variable: '--font-poppins'
-})
-
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -18,6 +17,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.className} font-poppins bg-gray-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidden`}>
+        <AnimatedCursor
+          innerSize={10}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          hasBlendMode={true}
+          innerStyle={{
+            backgroundColor: '#333'
+          }}
+          outerStyle={{
+            border: '3px solid #333'
+          }}
+        />
         {children}
       </body>
     </html>

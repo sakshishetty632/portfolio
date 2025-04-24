@@ -6,6 +6,7 @@ import { About } from './components/About'
 import { Contact } from './components/Contact'
 import { Project } from './components/Project'
 import { Skills } from './components/Skills';
+import { Footer } from './Footer';
 export const HomePage = () => {
     return (
         <div>
@@ -15,6 +16,7 @@ export const HomePage = () => {
             <Skills></Skills>
             <Project></Project>
             <Contact></Contact>
+            <Footer></Footer>
         </div>
 
     )
