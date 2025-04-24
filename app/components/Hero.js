@@ -7,7 +7,7 @@ const myFont = localFont({ src: '/TAN-BUSTER.otf' })
 
 export const Hero = () => {
     return (
-        <section id="hero" className="text-gray-600">
+        <section id="home" className="text-gray-600">
             <div className="container flex md:flex-row flex-col items-center">
                 <div className="lg:flex-grow  md:w-2/3  md:pr-16 flex flex-col md:items-center md:text-left mb-16 ml-15 md:mb-0 items-center text-center">
                     <div className="flex gap-1 items-start">

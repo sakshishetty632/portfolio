@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const sections = ['hero', 'about', 'skills', 'project', 'feedback'];
+const sections = ['home', 'about', 'skills', 'project', 'feedback'];
 
 export const Header = () => {
     const [activeSection, setActiveSection] = useState('');
@@ -34,7 +34,7 @@ export const Header = () => {
 
                 <nav className="md:ml-auto flex flex-wrap items-center justify-center text-xl highlightTextIn">
                     {sections.map((section) => (
-                        <Link key={section} href={`#${section}`} scroll={false}>
+                        <Link key={section} href={`#${section}`}>
                             <span
                                 data-text={section}
                                 className={`mr-9 relative cursor-pointer ${

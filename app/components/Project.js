@@ -99,8 +99,8 @@ export const Project = () => {
                 />
 
                 <div className="eyes">
-                    <img src="/eye.png" className="eye absolute top-[78.25px] left-[136px] h-[11px] w-[11px]" />
-                    <img src="/eye.png" className="eye absolute top-[77.5px] left-[183px] h-[11px] w-[11px]" />
+                    <img src="/eye.png" className="eye absolute top-[79.5px] left-[136px] h-[10.7px] w-[10.7px]" />
+                    <img src="/eye.png" className="eye absolute top-[78px] left-[183px] h-[11.2px] w-[11.2px]" />
                 </div>
             </div>
             {/* </div> */}
