@@ -21,7 +21,7 @@ export const Header = () => {
         };
 
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // for initial highlight
+        handleScroll(); 
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -37,9 +37,8 @@ export const Header = () => {
                         <Link key={section} href={`#${section}`}>
                             <span
                                 data-text={section}
-                                className={`mr-9 relative cursor-pointer ${
-                                    activeSection === section ? 'text-white font-semibold' : ''
-                                }`}
+                                className={`mr-9 relative cursor-pointer ${activeSection === section ? 'text-white font-semibold' : ''
+                                    }`}
                             >
                                 {section.charAt(0).toUpperCase() + section.slice(1)}
                             </span>

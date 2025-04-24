@@ -24,8 +24,10 @@ export const Contact = () => {
 
   return (
     <section id="contact" className="text-teal-700 body-font relative">
-      <h2 className="text-3xl sm:text-6xl mb-1 text-center w-full mt-10">Contact Me</h2>
+      {/* Heading */}
+      <h2 className="text-3xl sm:text-6xl mb-1 text-center w-full pt-20">Contact Me</h2>
       <div className="px-5 mx-auto flex justify-between sm:flex-nowrap flex-wrap">
+        {/* Left: Video */}
         <div className="lg:w-[30rem] md:w-1/2 w-5/6">
           <video
             className="object-contain rounded h-[30rem] w-[27rem] ml-20"
@@ -43,11 +45,11 @@ export const Contact = () => {
           onSubmit={handleSubmit}
           className="lg:w-[47%] md:w-1/2 bg-white flex flex-col mr-8 w-full md:py-2 mt-8 md:mt-4 mb-9"
         >
-          <p className="leading-relaxed mb-5 text-gray-800">
+          <p className="leading-relaxed mb-5 text-slate-800">
             Hey there! I'm always looking to learn and improve — if something stood out (good or bad), feel free to let me know. I truly appreciate it 💜
           </p>
           <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-800">Name</label>
+            <label htmlFor="name" className="leading-7 text-sm text-slate-800">Name</label>
             <input
               type="text"
               id="name"
@@ -57,7 +59,7 @@ export const Contact = () => {
             />
           </div>
           <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-800">Email</label>
+            <label htmlFor="email" className="leading-7 text-sm text-slate-800">Email</label>
             <input
               type="email"
               id="email"
@@ -67,7 +69,7 @@ export const Contact = () => {
             />
           </div>
           <div className="relative mb-4">
-            <label htmlFor="message" className="leading-7 text-sm text-gray-800">Message</label>
+            <label htmlFor="message" className="leading-7 text-sm text-slate-800">Message</label>
             <textarea
               id="message"
               name="message"

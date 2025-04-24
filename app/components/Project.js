@@ -86,12 +86,10 @@ export const Project = () => {
 
     return (
         <section id="project" className="text-teal-700 flex flex-col mt-12 items-center justify-center relative">
-            {/* <h2 className=" text-3xl sm:text-6xl text-center w-full mb-2">Projects</h2> */}
 
             <div className="bg-[url('/project-background.jpg')] bg-center w-screen h-screen absolute z-0 top-10 bg-cover bg-no-repeat opacity-5"></div>
 
-            {/* Overlapping Top Image */}
-            {/* <div className="relative"> */}
+            {/* Image with overlapping Top eye Image */}
             <div className="absolute top-22 left-1/2 transform -translate-x-1/2 z-10">
                 <img
                     id="anchor"
@@ -105,7 +103,6 @@ export const Project = () => {
                     <img src="/eye.png" className="eye absolute top-[78px] left-[183px] h-[11.2px] w-[11.2px]" />
                 </div>
             </div>
-            {/* </div> */}
 
             {/* Carousel */}
             <div className="container px-20 pt-[357px] pb-20 mx-auto relative z-0">
@@ -125,7 +122,7 @@ export const Project = () => {
                         <FaChevronRight className="text-2xl text-teal-700 hover:text-teal-900" />
                     </button>
 
-
+                    {/* Cards */}
                     <div className="flex justify-center gap-8 transition-transform duration-300 ease-in-out overflow-x-hidden">
                         {cards
                             .slice(currentIndex, currentIndex + 3)
@@ -150,8 +147,8 @@ export const Project = () => {
                                         </div>
 
                                         <div className="px-3.5 pb-3">
-                                            <h1 className="title-font text-lg font-medium text-gray-900 mb-1">{card.title}</h1>
-                                            <p className="leading-relaxed mb-1 line-clamp-2 text-gray-400">{card.desc}</p>
+                                            <h1 className="title-font text-lg font-medium text-slate-900 mb-1">{card.title}</h1>
+                                            <p className="leading-relaxed mb-1 line-clamp-2 text-slate-400">{card.desc}</p>
                                         </div>
                                     </div>
 

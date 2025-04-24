@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa'
 
 export const Footer = () => {
   return (
-    <footer className="text-gray-600">
+    <footer className="text-slate-600">
       <div className="container px-10 py-8 flex items-center justify-between sm:flex-row flex-col">
         <Image src='/Footer.jpg' alt='Logo' height={100} width={100} className='w-[45] ml-5 p-1 rounded-full'></Image>
         <p className="text-sm mt-2 ml-2 md:mt-0">Made with

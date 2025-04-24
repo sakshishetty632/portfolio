@@ -29,7 +29,7 @@ const skills = [
 
 
 
- export const Skills = () => {
+export const Skills = () => {
 
     const categories = Array.from(new Set(skills.map((s) => s.category)))
     const [category, setCategory] = useState(categories[0])
@@ -43,9 +43,10 @@ const skills = [
                     <span key={i} onClick={() => setCategory(c)} className={`p-1.5 md:p-2 text-sm md:text-base w-full text-center cursor-pointer rounded-md ${category.toLowerCase() === c.toLowerCase() ? "bg-teal-900 text-white" : "bg-white dark:bg-grey-800 hover:bg-teal-700/10 hover:dark:bg-grey-900"} transition-all capitalize`}>{c}</span>
                 ))}
             </div>
-
+            
+            {/* Skills */}
             <div className="lg:w-3/4 2xl:w-3/5 my-8 mx-auto md:px-12 grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 place-items-center gap-8">
-            {skills.filter((s) => s.category.toLowerCase() === category.toLowerCase()).map((skill, index) => (
+                {skills.filter((s) => s.category.toLowerCase() === category.toLowerCase()).map((skill, index) => (
                     <div key={index} className="flex flex-col justify-center items-center gap-2">
                         <div title={skill.name}
                             className="h-20 w-20 md:h-24 md:w-24 rounded-full bg-white flex items-center justify-center transform transition-all hover:scale-105">

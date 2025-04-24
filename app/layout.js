@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <title>Portfolio | Sakshi Shetty</title>
       </head>
-      <body className={`${poppins.className} font-poppins bg-gray-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidden`}>
+      <body className={`${poppins.className} font-poppins bg-slate-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidden`}>
         <AnimatedCursor
           innerSize={10}
           outerSize={35}
