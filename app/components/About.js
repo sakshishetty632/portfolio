@@ -26,20 +26,20 @@ export const About = () => {
                     {/* <p className="text-lg text-justify leading-relaxed mb-8">
                         Hi, I’m <strong>Sakshi Shetty</strong>. I enjoy building thoughtful software and understanding how things work whether it’s backend logic, frontend flow, or systems under the hood. I work mostly with Java, Spring Boot, Angular, C, C++, and Python, and I’m slowly finding my space in the world of open source, learning through every contribution. With an OCA Java Certification and a curiosity that rarely sits still, I’m just here to keep learning, building, and sipping coffee in between.
                     </p> */}
-                    <p className="text-lg mb-5 text-teal-900">
+                    <p className="text-lg mb-5 text-gray-900">
                         Hi, I’m <strong>Sakshi Shetty</strong>. My journey in tech started back in 11th grade when I took up Computer Science — not entirely by choice at the time, but it didn’t take long for me to get <strong>genuinely drawn into it</strong>. What began with curiosity turned into a real interest in <strong>how things work</strong> and <strong>how to build things that do</strong>.            
                         I’m just here to <strong>keep learning, building, and sipping coffee in between</strong>.
                     </p>
 
                     {/* Social Icons */}
                     <div className="flex justify-start space-x-6 mb-13">
-                        <a href="https://www.linkedin.com/in/shetty-sakshi" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/shetty-sakshi" className="bg-gray-100 hover:bg-gray-200 transform transition-all p-2 rounded" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin className="text-3xl hover:text-teal-900 transition duration-300" />
                         </a>
-                        <a href="https://github.com/sakshishetty632" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/sakshishetty632" className="bg-gray-100 hover:bg-gray-200 transform transition-all p-2 rounded" target="_blank" rel="noopener noreferrer">
                             <FaGithub className="text-3xl hover:text-teal-900 transition duration-300" />
                         </a>
-                        <a href="/SakshiShettyResume.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/SakshiShettyResume.pdf" className="bg-gray-100 hover:bg-gray-200 transform transition-all p-2 rounded" target="_blank" rel="noopener noreferrer">
                             <FaFileAlt className="text-3xl hover:text-teal-900 transition duration-300" />
                         </a>
 

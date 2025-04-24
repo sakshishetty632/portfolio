@@ -54,11 +54,11 @@ export const Hero = () => {
                     </div>
 
                     <div className="absolute grid -top-6 -left-12 lg:top-26 lg:left-84 w-16 h-16 md:w-16 md:h-16 bg-teal-700/10 opacity-20 rounded-full place-items-center hover:shadow-lg transition-shadow">
-                        <Image alt='tech-stack' className="h-8 w-8 md:h-8 md:w-8 object-cover" src="https://img.icons8.com/color/144/git.png" width={100} height={100} />
+                        <Image alt='tech-stack' className="h-8 w-8 md:h-8 md:w-8 object-cover" src="https://img.icons8.com/color/144/spring-logo.png" width={100} height={100} />
                     </div>
 
                     <div className="absolute grid -top-6 -left-12 lg:top-130 lg:-left-6 w-16 h-16 md:w-16 md:h-16 bg-teal-700/10 opacity-20 rounded-full place-items-center hover:shadow-lg transition-shadow">
-                        <Image alt='tech-stack' className="h-8 w-8 md:h-8 md:w-8 object-cover" src="https://img.icons8.com/color/144/000000/html-5--v1.png" width={100} height={100} />
+                        <Image alt='tech-stack' className="h-8 w-8 md:h-8 md:w-8 object-cover" src="https://img.icons8.com/color/144/git.png" width={100} height={100} />
                     </div>
                 </div>
             </div>

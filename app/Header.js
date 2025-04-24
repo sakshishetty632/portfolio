@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const sections = ['home', 'about', 'skills', 'project', 'feedback'];
+const sections = ['home', 'about', 'skills', 'project', 'contact'];
 
 export const Header = () => {
     const [activeSection, setActiveSection] = useState('');
@@ -29,7 +29,7 @@ export const Header = () => {
         <header className="fixed top-1 w-full z-50">
             <div className="mx-6 flex flex-wrap px-4 py-1 flex-col md:flex-row items-center bg-teal-700 rounded-full mt-1">
                 <Link href="/">
-                    <Image src='/LogoNew.png' alt='Logo' height={100} width={100} className='w-[45px] ml-5 p-1' />
+                    <Image src='/LogoNew.png' alt='Logo' height={100} width={100} className="w-[45px] ml-5 p-1" />
                 </Link>
 
                 <nav className="md:ml-auto flex flex-wrap items-center justify-center text-xl highlightTextIn">
@@ -41,7 +41,7 @@ export const Header = () => {
                                     activeSection === section ? 'text-white font-semibold' : ''
                                 }`}
                             >
-                                {section === 'feedback' ? 'Contact Me' : section.charAt(0).toUpperCase() + section.slice(1)}
+                                {section.charAt(0).toUpperCase() + section.slice(1)}
                             </span>
                         </Link>
                     ))}

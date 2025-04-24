@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaChevronLeft, FaChevronRight, FaGithub} from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaGithub } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi"
 
 export const Project = () => {
@@ -88,6 +88,8 @@ export const Project = () => {
         <section id="project" className="text-teal-700 flex flex-col mt-12 items-center justify-center relative">
             {/* <h2 className=" text-3xl sm:text-6xl text-center w-full mb-2">Projects</h2> */}
 
+            <div className="bg-[url('/project-background.jpg')] bg-center w-screen h-screen absolute z-0 top-10 bg-cover bg-no-repeat opacity-5"></div>
+
             {/* Overlapping Top Image */}
             {/* <div className="relative"> */}
             <div className="absolute top-22 left-1/2 transform -translate-x-1/2 z-10">
@@ -148,8 +150,8 @@ export const Project = () => {
                                         </div>
 
                                         <div className="px-3.5 pb-3">
-                                            <h1 className="title-font text-lg font-medium text-teal-900 mb-1">{card.title}</h1>
-                                            <p className="leading-relaxed mb-1 line-clamp-2 text-teal-600">{card.desc}</p>
+                                            <h1 className="title-font text-lg font-medium text-gray-900 mb-1">{card.title}</h1>
+                                            <p className="leading-relaxed mb-1 line-clamp-2 text-gray-400">{card.desc}</p>
                                         </div>
                                     </div>
 
