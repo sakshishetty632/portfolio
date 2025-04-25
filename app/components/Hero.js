@@ -37,7 +37,7 @@ export const Hero = () => {
                     </div>
                 </div>
                 {/* Right-Video */}
-                <div className="relative lg:w-[32rem] md:w-2/3 w-5/6">
+                <div className="relative lg:w-[32rem] md:w-2/3 w-[30rem]">
                     <video
                         className="object-cover sm:mt-33 h-[35rem] w-[27rem]"
                         autoPlay

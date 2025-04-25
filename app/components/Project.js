@@ -89,11 +89,11 @@ export const Project = () => {
 
             <div className="bg-[url('/Project/project-background.jpg')] bg-center w-screen h-screen absolute z-0 top-10 bg-cover bg-no-repeat opacity-5"></div>
 
-            {/* Image with overlapping Top eye Image */}
-            <div className="absolute top-22 left-1/2 transform -translate-x-1/2 z-10">
+             {/* Image with overlapping Top eye Image */}
+            {/* <div className="absolute top-22 left-1/2 transform -translate-x-1/2 z-10 hidden md:block"> 
                 <img
                     id="anchor"
-                    src='/Project/ProjectSakshiShetty.png'
+                    src='/Project/ProjectSakshiShetty1.png'
                     alt="Top Character"
                     className="w-[300px] h-[300px] object-contain"
                 />
@@ -102,10 +102,29 @@ export const Project = () => {
                     <img src="/Project/eye.png" className="eye absolute top-[79.5px] left-[136px] h-[10.7px] w-[10.7px]" />
                     <img src="/Project/eye.png" className="eye absolute top-[78px] left-[183px] h-[11.2px] w-[11.2px]" />
                 </div>
-            </div>
+            </div> */}
+            <div className="absolute top-22 left-1/2 transform -translate-x-1/2 hidden md:block">
 
+
+                <div className="eyes">
+                    <img src="/Project/eye.png" className="eye absolute top-[79.5px] left-[136px] h-[11.2px] w-[11.2px] -z-10 " />
+                    <img src="/Project/eye.png" className="eye absolute top-[78px] left-[183px] h-[11.2px] w-[11.2px] -z-10" />
+                </div>
+
+                <img
+                    id="anchor"
+                    src='/Project/ProjectSakshiShetty.png'
+                    alt="Top Character"
+                    className="w-[300px] h-[300px] object-contain z-50 "
+                />
+            </div>
+            <img
+                src="/Project/ProjectSakshiShetty-smallscreen.png"
+                alt="Character"
+                className="block md:hidden w-[300px] h-[300px] object-contain top-22 absolute"
+            />
             {/* Carousel */}
-            <div className="container sm:px-20 pt-[357px] pb-20 mx-auto relative z-0">
+            <div className="container sm:px-20 pt-[357px] pb-20 mx-auto relative -z-10">
                 <div className="relative bg-teal-700/10 rounded-xl px-6 py-8">
                     {/* Navigation Arrows */}
                     <button
