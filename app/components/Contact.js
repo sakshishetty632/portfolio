@@ -25,25 +25,25 @@ export const Contact = () => {
   return (
     <section id="contact" className="text-teal-700 body-font relative">
       {/* Heading */}
-      <h2 className="text-3xl sm:text-6xl mb-1 text-center w-full pt-20">Contact Me</h2>
+      <h2 className="text-4xl font-semibold sm:text-6xl mb-12 sm:mb-1 text-center w-full sm:pt-20">Contact Me</h2>
       <div className="px-5 mx-auto flex justify-between sm:flex-nowrap flex-wrap">
         {/* Left: Video */}
         <div className="lg:w-[30rem] md:w-1/2 w-5/6">
           <video
-            className="object-contain rounded h-[30rem] w-[27rem] ml-20"
+            className="object-contain rounded sm:h-[30rem] w-[27rem] ml-8 sm:ml-20"
             autoPlay
             loop
             muted
             playsInline
           >
-            <source src="/ContactSakshiShetty.mp4" type="video/mp4" />
+            <source src="/Contact/ContactSakshiShetty.mp4" type="video/mp4" />
           </video>
         </div>
 
         {/* Contact Form */}
         <form
           onSubmit={handleSubmit}
-          className="lg:w-[47%] md:w-1/2 bg-white flex flex-col mr-8 w-full md:py-2 mt-8 md:mt-4 mb-9"
+          className="lg:w-[47%] md:w-1/2 bg-white flex flex-col sm:mr-8 w-full md:py-2 mt-8 md:mt-4 mb-9"
         >
           <p className="leading-relaxed mb-5 text-slate-800">
             Hey there! I'm always looking to learn and improve — if something stood out (good or bad), feel free to let me know. I truly appreciate it 💜

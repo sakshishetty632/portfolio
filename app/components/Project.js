@@ -11,35 +11,35 @@ export const Project = () => {
     const cards = [
         {
             title: "LearnTrack",
-            img: "/LearnTrack.jpg",
+            img: "/Project/projectMockups/LearnTrack.jpg",
             desc: "LearnTrack is a student report management app built with Angular and Spring Boot, providing seamless tracking and management of academic performance.",
             liveLink: "http://localhost:4200/report/new",
             githubLink: "https://github.dev/sakshishetty632/form-report-client",
         },
         {
             title: "MAAS",
-            img: "/Maas.jpg",
+            img: "/Project/projectMockups/Maas.jpg",
             desc: "MaaS is a lightweight, scalable solution for real-time system monitoring, tracking CPU, memory, disk usage, and service health with a centralized dashboard and alerting.",
             liveLink: "",
             githubLink: "https://github.com/sakshishetty632/monitoring-as-a-service",
         },
         {
             title: "QR Code Generator",
-            img: "/QRCodeGenerator.jpg",
+            img: "/Project/projectMockups/QRCodeGenerator.jpg",
             desc: "The QR Code Generator is a Flask and Python-based tool that converts URLs into scannable QR codes, displayed as SVG images.",
             liveLink: "https://qr-code-generator-7w2j.onrender.com",
             githubLink: "https://github.com/sakshishetty632/qr-generator",
         },
         {
             title: "YouTube Downloader",
-            img: "/YoutubeDownloader.jpg",
+            img: "/Project/projectMockups/YoutubeDownloader.jpg",
             desc: "The YouTube Video Downloader is a Flask-based app using yt-dlp to download YouTube videos in various formats with ease.",
             liveLink: "",
             githubLink: "https://github.com/sakshishetty632/youtube-downloader",
         },
         {
             title: "Instagram Clone",
-            img: "/igclone.jpg",
+            img: "/Project/projectMockups/igclone.jpg",
             desc: "The Instagram Clone is a web app built with HTML and CSS, replicating the core design and layout of the Instagram platform.",
             liveLink: "https://sakshi-shetty-instagram-clone.vercel.app/",
             githubLink: "https://github.com/sakshishetty632/instagram-clone",
@@ -87,37 +87,37 @@ export const Project = () => {
     return (
         <section id="project" className="text-teal-700 flex flex-col mt-12 items-center justify-center relative">
 
-            <div className="bg-[url('/project-background.jpg')] bg-center w-screen h-screen absolute z-0 top-10 bg-cover bg-no-repeat opacity-5"></div>
+            <div className="bg-[url('/Project/project-background.jpg')] bg-center w-screen h-screen absolute z-0 top-10 bg-cover bg-no-repeat opacity-5"></div>
 
             {/* Image with overlapping Top eye Image */}
             <div className="absolute top-22 left-1/2 transform -translate-x-1/2 z-10">
                 <img
                     id="anchor"
-                    src='/SakshiShettyProject.png'
+                    src='/Project/ProjectSakshiShetty.png'
                     alt="Top Character"
                     className="w-[300px] h-[300px] object-contain"
                 />
 
                 <div className="eyes">
-                    <img src="/eye.png" className="eye absolute top-[79.5px] left-[136px] h-[10.7px] w-[10.7px]" />
-                    <img src="/eye.png" className="eye absolute top-[78px] left-[183px] h-[11.2px] w-[11.2px]" />
+                    <img src="/Project/eye.png" className="eye absolute top-[79.5px] left-[136px] h-[10.7px] w-[10.7px]" />
+                    <img src="/Project/eye.png" className="eye absolute top-[78px] left-[183px] h-[11.2px] w-[11.2px]" />
                 </div>
             </div>
 
             {/* Carousel */}
-            <div className="container px-20 pt-[357px] pb-20 mx-auto relative z-0">
+            <div className="container sm:px-20 pt-[357px] pb-20 mx-auto relative z-0">
                 <div className="relative bg-teal-700/10 rounded-xl px-6 py-8">
                     {/* Navigation Arrows */}
                     <button
                         onClick={prevSlide}
-                        className="absolute left-2 top-1/2 transform -translate-y-1/2 z-20 opacity-80 pl-10"
+                        className="absolute left-2 top-1/2 transform -translate-y-1/2 z-20 opacity-80 sm:pl-10"
                     >
                         <FaChevronLeft className="text-2xl text-teal-700 hover:text-teal-900" />
                     </button>
 
                     <button
                         onClick={nextSlide}
-                        className="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 opacity-80 pr-10"
+                        className="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 opacity-80 sm:pr-10"
                     >
                         <FaChevronRight className="text-2xl text-teal-700 hover:text-teal-900" />
                     </button>

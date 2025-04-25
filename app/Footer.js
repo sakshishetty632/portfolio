@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer className="text-slate-600">
       <div className="container px-10 py-8 flex items-center justify-between sm:flex-row flex-col">
-        <Image src='/Footer.jpg' alt='Logo' height={100} width={100} className='w-[45] ml-5 p-1 rounded-full'></Image>
+        <Image src='/Footer/SakshiShettyFooter.jpg' alt='Logo' height={100} width={100} className='w-[45] ml-5 p-1 rounded-full'></Image>
         <p className="text-sm mt-2 ml-2 md:mt-0">Made with
           <span className="animate-pulse"> ❤️ </span>
           by
