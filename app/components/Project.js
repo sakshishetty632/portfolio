@@ -124,7 +124,7 @@ export const Project = () => {
                 className="block md:hidden w-[300px] h-[300px] object-contain top-22 absolute"
             />
             {/* Carousel */}
-            <div className="container sm:px-20 pt-[357px] pb-20 mx-auto relative -z-10">
+            <div className="container sm:px-20 2xl:px-42 pt-[357px] pb-20 mx-auto relative -z-10">
                 <div className="relative bg-teal-700/10 rounded-xl px-6 py-8">
                     {/* Navigation Arrows */}
                     <button

@@ -22,7 +22,7 @@ export const About = () => {
                 </div>
 
                 {/* Right: Text + Icons */}
-                <div className="md:w-2/3 w-full px-4 ">
+                <div className="md:w-2/3 2xl:w-1/2 w-full px-4 ">
                     <p className="text-base sm:text-lg mb-5 text-slate-900">
                         Hi, I’m <strong>Sakshi Shetty</strong>. My journey in tech started back in 11th grade when I took up Computer Science — not entirely by choice at the time, but it didn’t take long for me to get genuinely drawn into it. What began with curiosity turned into a <strong>real interest in how things work and how to build things that do</strong>.
                         <strong> I’m just here to keep learning, building, and sipping coffee in between</strong>.

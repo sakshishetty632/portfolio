@@ -43,7 +43,7 @@ export const Contact = () => {
         {/* Contact Form */}
         <form
           onSubmit={handleSubmit}
-          className="lg:w-[47%] md:w-1/2 bg-white flex flex-col sm:mr-8 w-full md:py-2 mt-8 md:mt-4 mb-9"
+          className="lg:w-[47%] 2xl:w-[43%] md:w-1/2 bg-white flex flex-col sm:mr-8 2xl:mr-28 w-full md:py-2 mt-8 md:mt-4 mb-9"
         >
           <p className="leading-relaxed mb-5 text-slate-800">
             Hey there! I'm always looking to learn and improve — if something stood out (good or bad), feel free to let me know. I truly appreciate it 💜
