@@ -14,7 +14,7 @@ export const Project = () => {
             img: "/Project/projectMockups/LearnTrack.jpg",
             desc: "LearnTrack is a student report management app built with Angular and Spring Boot, providing seamless tracking and management of academic performance.",
             liveLink: "http://localhost:4200/report/new",
-            githubLink: "https://github.dev/sakshishetty632/form-report-client",
+            githubLink: "https://github.dev/sakshishetty632/LearnTracker-client",
         },
         {
             title: "MAAS",
