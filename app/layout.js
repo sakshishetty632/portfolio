@@ -43,8 +43,8 @@ export default function RootLayout({ children }) {
           outerScale={2}
           outerAlpha={0}
           hasBlendMode={true}
-          innerStyle={{ backgroundColor: '#333' }}
-          outerStyle={{ border: '3px solid #333' }}
+          innerStyle={{ backgroundColor: '#008080' }}
+          outerStyle={{ border: '3px solid #008080' }}
         />
         {children}
 

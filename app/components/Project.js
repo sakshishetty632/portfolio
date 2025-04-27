@@ -64,7 +64,7 @@ export const Project = () => {
             const dx = mouseX - anchorX;
             const dy = mouseY - anchorY;
 
-            const distance = Math.min(Math.sqrt(dx * dx + dy * dy), 50);
+            const distance = Math.min(Math.sqrt(dx * dx + dy * dy), 70);
             const angle = Math.atan2(dy, dx);
             const offsetX = Math.cos(angle) * (distance / 32);
             const offsetY = Math.sin(angle) * (distance / 32);
@@ -107,8 +107,8 @@ export const Project = () => {
 
 
                 <div className="eyes">
-                    <img src="/Project/eye.png" className="eye absolute top-[79.5px] left-[136px] h-[11.2px] w-[11.2px] -z-10 " />
-                    <img src="/Project/eye.png" className="eye absolute top-[78px] left-[183px] h-[11.2px] w-[11.2px] -z-10" />
+                    <img src="/Project/eye.png" className="eye absolute top-[79px] left-[136px] h-[11.5px] w-[11.5px] -z-10 " />
+                    <img src="/Project/eye.png" className="eye absolute top-[77.7px] left-[183px] h-[12.2px] w-[12.2px] -z-10" />
                 </div>
 
                 <img

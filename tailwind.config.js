@@ -14,6 +14,7 @@ module.exports = {
         // },
         colors: {
           teal: {
+            50:'#dcffff',
             700:'#008080',
             900:'#004D4D'
           },

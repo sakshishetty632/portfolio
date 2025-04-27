@@ -37,9 +37,9 @@ export const Hero = () => {
                     </div>
                 </div>
                 {/* Right-Video */}
-                <div className="relative lg:w-[32rem] md:w-2/3 w-[30rem]">
+                <div className="relative lg:w-[32rem] md:w-2/3 w-[22.5rem] ">
                     <video
-                        className="object-cover sm:mt-33 h-[35rem] w-[27rem]"
+                        className="object-cover sm:mt-33 h-[26rem] sm:h-[35rem] w-[27rem] -z-50"
                         autoPlay
                         loop
                         muted
@@ -48,15 +48,15 @@ export const Hero = () => {
                         <source src="/Hero/HeroSakshiShetty.mp4" type="video/mp4" />
                     </video>
                     {/* Right-Backgrounnd */}
-                    <div className="absolute hidden sm:grid -top-6 -left-12 lg:top-30 lg:left-16 w-16 h-16 md:w-20 md:h-20 bg-teal-700/10 opacity-20 rounded-full place-items-center hover:shadow-lg transition-shadow">
+                    <div className="absolute hidden sm:grid -top-6 -left-12 lg:top-30 lg:left-16 w-16 h-16 md:w-20 md:h-20 bg-teal-700/10 opacity-20 rounded-full place-items-center hover:shadow-lg transition-shadow z-50">
                         <Image alt='tech-stack' className="h-8 w-8 md:h-10 md:w-10 object-cover" src="https://img.icons8.com/color/144/java-coffee-cup-logo--v1.png" width={100} height={100} />
                     </div>
 
-                    <div className="absolute hidden sm:grid -top-6 -left-12 lg:top-26 lg:left-84 w-16 h-16 md:w-16 md:h-16 bg-teal-700/10 opacity-20 rounded-full place-items-center hover:shadow-lg transition-shadow">
+                    <div className="absolute hidden sm:grid -top-6 -left-12 lg:top-26 lg:left-84 w-16 h-16 md:w-16 md:h-16 bg-teal-700/10 opacity-20 rounded-full place-items-center hover:shadow-lg transition-shadow z-50">
                         <Image alt='tech-stack' className="h-8 w-8 md:h-8 md:w-8 object-cover" src="https://img.icons8.com/color/144/spring-logo.png" width={100} height={100} />
                     </div>
 
-                    <div className="absolute hidden sm:grid -top-6 -left-12 lg:top-130 lg:-left-6 w-16 h-16 md:w-16 md:h-16 bg-teal-700/10 opacity-20 rounded-full place-items-center hover:shadow-lg transition-shadow">
+                    <div className="absolute hidden sm:grid -top-6 -left-12 lg:top-130 lg:-left-6 w-16 h-16 md:w-16 md:h-16 bg-teal-50 opacity-100 rounded-full place-items-center hover:scale-110 transition-shadow z-50">
                         <Image alt='tech-stack' className="h-8 w-8 md:h-8 md:w-8 object-cover" src="https://img.icons8.com/color/144/git.png" width={100} height={100} />
                     </div>
                 </div>

@@ -64,10 +64,10 @@ export const Header = () => {
 
             {/* Mobile sliding menu */}
             <div
-                className={`md:hidden fixed top-[70px] left-0 w-full bg-teal-800 transition-all duration-300 ease-in-out z-40 
+                className={`md:hidden fixed top-[74px] left-3 w-[94%] mx-auto rounded-2xl bg-teal-700 transition-all duration-300 ease-in-out z-40 
                     ${isMobileMenuOpen ? 'max-h-[300px] py-4' : 'max-h-0 overflow-hidden'}`}
             >
-                <div className="flex flex-col items-center gap-4">
+                <div className="flex flex-col items-center gap-6">
                     {sections.map((section) => (
                         <Link key={section} href={`#${section}`} onClick={closeMobileMenu}>
                             <span
