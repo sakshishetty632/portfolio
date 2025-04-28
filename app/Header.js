@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaBars, FaTimes } from 'react-icons/fa' // from react-icons
 
-const sections = ['home', 'about', 'skills', 'project', 'contact'];
+const sections = ['home', 'about', 'skills', 'projects', 'contact'];
 
 export const Header = () => {
     const [activeSection, setActiveSection] = useState('');
@@ -67,9 +67,9 @@ export const Header = () => {
                 className={`md:hidden fixed top-[74px] left-3 w-[94%] mx-auto rounded-2xl bg-teal-700 transition-all duration-300 ease-in-out z-40 
                     ${isMobileMenuOpen ? 'max-h-[300px] py-4' : 'max-h-0 overflow-hidden'}`}
             >
-                <div className="flex flex-col items-center gap-6">
+                <div className="flex flex-col items-center gap-2">
                     {sections.map((section) => (
-                        <Link key={section} href={`#${section}`} onClick={closeMobileMenu}>
+                        <Link key={section} href={`#${section}`} className={`py-2 w-full text-center rounded ${activeSection === section ? 'bg-teal-900' : ''}`} onClick={closeMobileMenu}>
                             <span
                                 className={`text-white text-lg ${activeSection === section ? 'font-semibold' : ''}`}
                             >

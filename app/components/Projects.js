@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight, FaGithub } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi"
 
-export const Project = () => {
+export const Projects = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const cards = [
@@ -13,8 +13,8 @@ export const Project = () => {
             title: "LearnTrack",
             img: "/Project/projectMockups/LearnTrack.jpg",
             desc: "LearnTrack is a student report management app built with Angular and Spring Boot, providing seamless tracking and management of academic performance.",
-            liveLink: "http://localhost:4200/report/new",
-            githubLink: "https://github.dev/sakshishetty632/form-report-client",
+            liveLink: "https://learntracker.vercel.app",
+            githubLink: "https://github.dev/sakshishetty632/LearnTracker-client",
         },
         {
             title: "MAAS",
@@ -85,7 +85,7 @@ export const Project = () => {
     }, [cards.length]);
 
     return (
-        <section id="project" className="text-teal-700 flex flex-col mt-12 items-center justify-center relative">
+        <section id="projects" className="text-teal-700 flex flex-col mt-12 items-center justify-center relative">
 
             <div className="bg-[url('/Project/project-background.jpg')] bg-center w-screen h-screen absolute z-0 top-10 bg-cover bg-no-repeat opacity-5"></div>
 
@@ -155,7 +155,7 @@ export const Project = () => {
                                         <div className="m-2 relative group">
                                             <img className="h-[200px] w-full object-cover rounded-lg object-center" src={card.img} alt={card.title} />
 
-                                            <div className="absolute top-0 scale-x-0 group-hover:scale-100 transition-transform origin-left duration-150 ease-linear bg-teal-900/70 w-full h-full rounded-lg flex items-center gap-4 justify-center">
+                                            <div className="absolute top-0 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-150 ease-linear bg-teal-900/70 w-full h-full rounded-lg flex items-center gap-4 justify-center">
                                                 <Link href={card.githubLink} target="_blank" className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
                                                     <BiLinkExternal size={20} />
                                                 </Link>

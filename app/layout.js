@@ -1,6 +1,8 @@
+'use client';
 import { Poppins } from 'next/font/google';
 import "./globals.css";
 import AnimatedCursor from 'react-animated-cursor';
+import { useEffect, useState } from 'react';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -8,12 +10,29 @@ const poppins = Poppins({
   variable: '--font-poppins'
 });
 
-export const metadata = {
-  title: "Portfolio | Sakshi Shetty",
-  description: "I'm Sakshi Shetty, full-stack developer based in Pune, India. My journey in tech started back in 11th grade when I took up Computer Science — not entirely by choice at the time, but it didn’t take long for me to get genuinely drawn into it.",
-};
+// export const metadata = {
+//   title: "Portfolio | Sakshi Shetty",
+//   description: "I'm Sakshi Shetty, full-stack developer based in Pune, India. My journey in tech started back in 11th grade when I took up Computer Science — not entirely by choice at the time, but it didn’t take long for me to get genuinely drawn into it.",
+// };
 
 export default function RootLayout({ children }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      if (typeof window !== "undefined") {
+        return (
+          'ontouchstart' in window ||
+          navigator.maxTouchPoints > 0 ||
+          navigator.msMaxTouchPoints > 0
+        );
+      }
+      return false;
+    };
+
+    setIsMobile(checkIfMobile());
+  }, []);
+
   return (
     <html lang="en">
       <head>
@@ -36,16 +55,19 @@ export default function RootLayout({ children }) {
         <title>Portfolio | Sakshi Shetty</title>
       </head>
       <body className={`${poppins.className} font-poppins bg-slate-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidden`}>
-        <AnimatedCursor
-          innerSize={10}
-          outerSize={35}
-          innerScale={1}
-          outerScale={2}
-          outerAlpha={0}
-          hasBlendMode={true}
-          innerStyle={{ backgroundColor: '#008080' }}
-          outerStyle={{ border: '3px solid #008080' }}
-        />
+        {/* Render Animated Cursor only if not mobile */}
+        {!isMobile && (
+          <AnimatedCursor
+            innerSize={10}
+            outerSize={35}
+            innerScale={1}
+            outerScale={2}
+            outerAlpha={0}
+            hasBlendMode={true}
+            innerStyle={{ backgroundColor: '#008080' }}
+            outerStyle={{ border: '3px solid #008080' }}
+          />
+        )}
         {children}
 
         <script dangerouslySetInnerHTML={{
