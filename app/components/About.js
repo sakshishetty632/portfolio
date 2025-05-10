@@ -36,7 +36,7 @@ export const About = () => {
                         <a href="https://github.com/sakshishetty632" className="bg-slate-100 hover:bg-slate-200 transform transition-all p-2 rounded" target="_blank" rel="noopener noreferrer">
                             <FaGithub className="text-3xl hover:text-teal-900 transition duration-300" />
                         </a>
-                        <a href="https://drive.google.com/file/d/1keYM66GMtw7gRAWXQXmQ8FPnkKEaomKO/view?usp=drive_link" className="bg-slate-100 hover:bg-slate-200 transform transition-all p-2 rounded" target="_blank" rel="noopener noreferrer">
+                        <a href="https://drive.google.com/file/d/1dqCNlAj073GPc1RDQP6hhdgPN3-7dlN5/view?usp=sharing" className="bg-slate-100 hover:bg-slate-200 transform transition-all p-2 rounded" target="_blank" rel="noopener noreferrer">
                             <FaFileAlt className="text-3xl hover:text-teal-900 transition duration-300" />
                         </a>
 

@@ -6,20 +6,22 @@ import { FaChevronLeft, FaChevronRight, FaGithub } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi"
 
 export const Projects = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    // const [currentIndex, setCurrentIndex] = useState(0);
 
     const cards = [
         {
             title: "LearnTrack",
             img: "/Project/projectMockups/LearnTrack.jpg",
             desc: "LearnTrack is a student report management app built with Angular and Spring Boot, providing seamless tracking and management of academic performance.",
+            techStack: "Angular, Spring Boot, Java, RESTful APIs, MongoDB",
             liveLink: "https://learntracker.vercel.app",
-            githubLink: "https://github.dev/sakshishetty632/LearnTracker-client",
+            githubLink: "https://github.com/sakshishetty632/LearnTracker-client",
         },
         {
             title: "MAAS",
             img: "/Project/projectMockups/Maas.jpg",
             desc: "MaaS is a lightweight, scalable solution for real-time system monitoring, tracking CPU, memory, disk usage, and service health with a centralized dashboard and alerting.",
+            techStack: "Golang, Kafka, Logstash, Elasticsearch, Kibana, Docker, Git",
             liveLink: "",
             githubLink: "https://github.com/sakshishetty632/monitoring-as-a-service",
         },
@@ -27,6 +29,7 @@ export const Projects = () => {
             title: "QR Code Generator",
             img: "/Project/projectMockups/QRCodeGenerator.jpg",
             desc: "The QR Code Generator is a Flask and Python-based tool that converts URLs into scannable QR codes, displayed as SVG images.",
+            techStack: "Python, QR Code Library, Flask",
             liveLink: "https://qr-code-generator-7w2j.onrender.com",
             githubLink: "https://github.com/sakshishetty632/qr-generator",
         },
@@ -34,6 +37,7 @@ export const Projects = () => {
             title: "YouTube Downloader",
             img: "/Project/projectMockups/YoutubeDownloader.jpg",
             desc: "The YouTube Video Downloader is a Flask-based app using yt-dlp to download YouTube videos in various formats with ease.",
+            techStack: "Python, HTML, CSS, JavaScript",
             liveLink: "",
             githubLink: "https://github.com/sakshishetty632/youtube-downloader",
         },
@@ -41,15 +45,16 @@ export const Projects = () => {
             title: "Instagram Clone",
             img: "/Project/projectMockups/igclone.jpg",
             desc: "The Instagram Clone is a web app built with HTML and CSS, replicating the core design and layout of the Instagram platform.",
-            liveLink: "https://sakshi-shetty-instagram-clone.vercel.app/",
+            techStack: "HTML, CSS, JavaScript",
+            liveLink: "https://sakshi-shetty-instagram-clone.vercel.app",
             githubLink: "https://github.com/sakshishetty632/instagram-clone",
         },
     ];
 
-    const prevSlide = () =>
-        setCurrentIndex((prev) => (prev === 0 ? cards.length - 1 : prev - 1));
-    const nextSlide = () =>
-        setCurrentIndex((prev) => (prev === cards.length - 1 ? 0 : prev + 1));
+    // const prevSlide = () =>
+    //     setCurrentIndex((prev) => (prev === 0 ? cards.length - 1 : prev - 1));
+    // const nextSlide = () =>
+    //     setCurrentIndex((prev) => (prev === cards.length - 1 ? 0 : prev + 1));
 
     useEffect(() => {
         const handleMouseMove = (event) => {
@@ -85,11 +90,12 @@ export const Projects = () => {
     }, [cards.length]);
 
     return (
-        <section id="projects" className="text-teal-700 flex flex-col mt-12 items-center justify-center relative">
+        <section id="projects" className="text-teal-700 flex flex-col items-center justify-center relative">
 
-            <div className="bg-[url('/Project/project-background.jpg')] bg-center w-screen h-screen absolute z-0 top-10 bg-cover bg-no-repeat opacity-5"></div>
+            <div className="bg-[url('/Project/project-background.jpg')] bg-center w-screen h-screen absolute z-0 top-10 bg-contain bg-repeat opacity-5"></div>
+            <div className="bg-[url('/Project/project-background.jpg')] bg-center w-screen h-[60vh] absolute z-0 -bottom-10 bg-contain bg-repeat opacity-5"></div>
 
-             {/* Image with overlapping Top eye Image */}
+            {/* Image with overlapping Top eye Image */}
             {/* <div className="absolute top-22 left-1/2 transform -translate-x-1/2 z-10 hidden md:block"> 
                 <img
                     id="anchor"
@@ -115,7 +121,7 @@ export const Projects = () => {
                     id="anchor"
                     src='/Project/ProjectSakshiShetty.png'
                     alt="Top Character"
-                    className="w-[300px] h-[300px] object-contain z-50 "
+                    className="w-[300px] h-[300px] object-contain z-0"
                 />
             </div>
             <img
@@ -124,10 +130,14 @@ export const Projects = () => {
                 className="block md:hidden w-[300px] h-[300px] object-contain top-22 absolute"
             />
             {/* Carousel */}
-            <div className="container sm:px-20 2xl:px-42 pt-[357px] pb-20 mx-auto relative -z-10">
-                <div className="relative bg-teal-700/10 rounded-xl px-6 py-8">
+            <div className="container sm:px-20 2xl:px-42 pt-[352px] sm:pt-[357px] mx-auto relative -z-1">
+                <div className="relative bg-teal-700/10 rounded-t-xl px-6 py-4">
+                </div>
+            </div>
+            <div className="container sm:px-20 2xl:px-42 pb-20 mx-auto relative">
+                <div className="relative bg-teal-700/10 rounded-b-xl px-6 pt-2 pb-8">
                     {/* Navigation Arrows */}
-                    <button
+                    {/* <button
                         onClick={prevSlide}
                         className="absolute left-2 top-1/2 transform -translate-y-1/2 z-20 opacity-80 sm:pl-10"
                     >
@@ -139,40 +149,38 @@ export const Projects = () => {
                         className="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 opacity-80 sm:pr-10"
                     >
                         <FaChevronRight className="text-2xl text-teal-700 hover:text-teal-900" />
-                    </button>
+                    </button> */}
 
                     {/* Cards */}
-                    <div className="flex justify-center gap-8 transition-transform duration-300 ease-in-out overflow-x-hidden">
-                        {cards
-                            .slice(currentIndex, currentIndex + 3)
-                            .concat(cards.slice(0, Math.max(0, 3 - (cards.length - currentIndex))))
-                            .map((card, index) => (
-                                <div
-                                    key={index}
-                                    className="w-full sm:w-[18.5rem] px-2 flex-shrink-0"
-                                >
-                                    <div className="relative rounded-lg overflow-hidden bg-white">
-                                        <div className="m-2 relative group">
-                                            <img className="h-[200px] w-full object-cover rounded-lg object-center" src={card.img} alt={card.title} />
+                    <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-12 transition-transform duration-300 ease-in-out overflow-x-hidden">
+                        {cards.map((card, index) => (
+                            <div
+                                key={index}
+                                className="w-full px-2 flex-shrink-0"
+                            >
+                                <div className="relative h-full rounded-lg overflow-hidden bg-white">
+                                    <div className="m-2 relative group">
+                                        <img className="h-[200px] w-full object-cover rounded-lg object-center" src={card.img} alt={card.title} />
 
-                                            <div className="absolute top-0 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-150 ease-linear bg-teal-900/70 w-full h-full rounded-lg flex items-center gap-4 justify-center">
-                                                <Link href={card.githubLink} target="_blank" className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
-                                                    <BiLinkExternal size={20} />
-                                                </Link>
-                                                <Link href={card.githubLink} target="_blank" className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
-                                                    <FaGithub size={20} />
-                                                </Link>
-                                            </div>
-                                        </div>
-
-                                        <div className="px-3.5 pb-3">
-                                            <h1 className="title-font text-lg font-medium text-slate-900 mb-1">{card.title}</h1>
-                                            <p className="leading-relaxed mb-1 line-clamp-2 text-slate-400">{card.desc}</p>
+                                        <div className="absolute top-0 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-150 ease-linear bg-teal-900/70 w-full h-full rounded-lg flex items-center gap-4 justify-center">
+                                            <Link href={card.githubLink} target="_blank" className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
+                                                <BiLinkExternal size={20} />
+                                            </Link>
+                                            <Link href={card.githubLink} target="_blank" className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
+                                                <FaGithub size={20} />
+                                            </Link>
                                         </div>
                                     </div>
 
+                                    <div className="px-3.5 pb-3">
+                                        <h1 className="title-font text-lg font-medium text-slate-900 mb-1">{card.title}</h1>
+                                        {/* <p className="leading-relaxed mb-1 line-clamp-2 text-slate-400">{card.desc}</p> */}
+                                        <p className="text-sm text-slate-400"> <span className="font-medium">Tech Stack:</span> {card.techStack}</p>
+                                    </div>
                                 </div>
-                            ))}
+
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
