@@ -45,7 +45,7 @@ export const Hero = () => {
                         muted
                         playsInline
                     >
-                        <source src="/Hero/HeroSakshiShetty1.mp4" type="video/mp4" />
+                        <source src="/Hero/HeroSakshiShetty2.mp4" type="video/mp4" />
                     </video>
                     {/* Right-Backgrounnd */}
                     <div className="absolute hidden sm:grid -top-6 -left-12 lg:top-30 lg:left-16 w-16 h-16 md:w-20 md:h-20 bg-gray-50 opacity-100 rounded-full place-items-center hover:scale-110 transition-shadow z-10">
