@@ -8,7 +8,7 @@ const myFont = localFont({ src: '/TAN-BUSTER.otf' })
 export const Hero = () => {
     return (
         <section id="home" className="text-slate-600 sm:mt-0 mt-30">
-            <div className="container flex md:flex-row flex-col items-center">
+            <div className="container flex md:flex-row flex-col items-center pt-16">
                 {/* Left-Text */}
                 <div className="lg:flex-grow md:w-2/3 2xl:w-1/2 md:pr-16 flex flex-col md:items-center md:text-left sm:mb-16 sm:ml-15 md:mb-0 items-center text-center">
                     <div className="flex gap-1 items-start">
@@ -37,15 +37,15 @@ export const Hero = () => {
                     </div>
                 </div>
                 {/* Right-Video */}
-                <div className="relative lg:w-[32rem] 2xl:w-[33rem] md:w-2/3 w-[22.5rem]">
+                <div className="relative lg:w-[32rem] 2xl:w-[33rem] md:w-2/3 w-[22.5rem] ">
                     <video
-                        className="object-cover sm:mt-33 h-[26rem] sm:h-[35rem] 2xl:h-[40rem] w-[27rem] -z-50"
+                        className="object-cover sm:mt-33 h-[26rem] sm:h-[24rem] 2xl:h-[40rem] w-[27rem] sm:w-[24rem] -z-50 rounded-full"
                         autoPlay
                         loop
                         muted
                         playsInline
                     >
-                        <source src="/Hero/HeroSakshiShetty.mp4" type="video/mp4" />
+                        <source src="/Hero/HeroSakshiShetty1.mp4" type="video/mp4" />
                     </video>
                     {/* Right-Backgrounnd */}
                     <div className="absolute hidden sm:grid -top-6 -left-12 lg:top-30 lg:left-16 w-16 h-16 md:w-20 md:h-20 bg-gray-50 opacity-100 rounded-full place-items-center hover:scale-110 transition-shadow z-10">

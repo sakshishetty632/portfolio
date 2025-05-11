@@ -21,11 +21,14 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     const checkIfMobile = () => {
       if (typeof window !== "undefined") {
-        return (
+        const isTouchDevice =
           'ontouchstart' in window ||
           navigator.maxTouchPoints > 0 ||
-          navigator.msMaxTouchPoints > 0
-        );
+          navigator.msMaxTouchPoints > 0;
+    
+        const isSmallScreen = window.innerWidth <= 768;
+    
+        return isTouchDevice && isSmallScreen;
       }
       return false;
     };
