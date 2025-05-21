@@ -35,7 +35,9 @@ export const Skills = () => {
     const [category, setCategory] = useState(categories[0])
 
     return (
-        <div id='skills' className="min-h-screen mt-12 md:mt-0 sm:mx-4 md:mx-0 xl:my-20 2xl:my-0 sm:pt-8 sm:pb-28 bg-teal-700/7 text-teal-700">
+        <div id='skills' className="min-h-screen relative  mt-12 md:mt-0 sm:mx-4 md:mx-0 xl:my-20 2xl:my-0 sm:pt-8 sm:pb-28 bg-teal-700/7 text-teal-700">
+            <div class="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent"></div>
+
             <h2 className="text-4xl font-semibold sm:text-6xl text-center sm:pt-0 pt-12 mt-18">Skills</h2>
 
             <div className="md:w-1/2 overflow-x-auto scroll-hide lg:w-1/3 sm:mx-auto mx-6 mt-8 bg-white dark:bg-grey-800 p-2 flex justify-between items-center gap-3 rounded-md">
@@ -43,7 +45,7 @@ export const Skills = () => {
                     <span key={i} onClick={() => setCategory(c)} className={`p-1.5 md:p-2 text-sm md:text-base w-full text-center cursor-pointer rounded-md ${category.toLowerCase() === c.toLowerCase() ? "bg-teal-900 text-white" : "bg-white dark:bg-grey-800 hover:bg-teal-700/10 hover:dark:bg-grey-900"} transition-all capitalize`}>{c}</span>
                 ))}
             </div>
-            
+
             {/* Skills */}
             <div className="lg:w-3/4 2xl:w-3/5 my-8 mx-auto md:px-12 grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 place-items-center gap-8">
                 {skills.filter((s) => s.category.toLowerCase() === category.toLowerCase()).map((skill, index) => (
@@ -62,6 +64,7 @@ export const Skills = () => {
                     </div>
                 ))}
             </div>
+            <div className="absolute -bottom-6 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent"></div>
         </div>
     )
 }
