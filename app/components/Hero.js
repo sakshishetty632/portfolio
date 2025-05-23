@@ -7,7 +7,7 @@ const myFont = localFont({ src: '/TAN-BUSTER.otf' })
 
 export const Hero = () => {
     return (
-        <section id="home" className="text-slate-600 sm:pt-0 pt-16 bg-teal-700/7 h-[110vh]">
+        <section id="home" className="text-slate-600 sm:pt-0 pt-16 bg-teal-700/7 h-[90vh] sm:h-[110vh]">
             <div className="container flex md:flex-row flex-col items-center pt-16">
                 {/* Left-Text */}
                 <div className="lg:flex-grow md:w-2/3 2xl:w-1/2 md:pr-16 flex flex-col md:items-center md:text-left sm:mb-16 sm:ml-15 md:mb-0 items-center text-center">
@@ -61,7 +61,7 @@ export const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute -bottom-20 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent"></div>
+            <div className="absolute bottom-0 sm:-bottom-20 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent"></div>
         </section>
     )
 }

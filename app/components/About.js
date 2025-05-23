@@ -25,12 +25,12 @@ export const About = () => {
                 {/* Right: Text + Icons */}
                 <div className="md:w-2/3 2xl:w-1/2 w-full px-4 ">
                     <p className="text-base sm:text-lg mb-5 text-slate-900">
-                        Hi, I’m <strong>Sakshi Shetty</strong>. My journey in tech started back in 11th grade when I took up Computer Science — not entirely by choice at the time, but it didn’t take long for me to get genuinely drawn into it. What began with curiosity turned into a <strong>real interest in how things work and how to build things that do</strong>.
+                        Hi, I’m <strong>Sakshi Shetty</strong>. My journey in tech started back in 11th grade when I took up Computer Science — not entirely by choice at the time, but it didn’t take long for me to get genuinely drawn into it. What began with curiosity turned into a real interest in how things work and how to build things that do.
                         <strong> I’m just here to keep learning, building, and sipping coffee in between</strong>.
                     </p>
 
                     {/* Social Icons */}
-                    <div className="flex justify-start space-x-6 mb-13">
+                    <div className="flex justify-center sm:justify-start space-x-6 mb-13">
                         <a href="https://www.linkedin.com/in/shetty-sakshi" className="bg-slate-100 hover:bg-slate-200 transform transition-all p-2 rounded" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin className="text-3xl hover:text-teal-900 transition duration-300" />
                         </a>
