@@ -35,10 +35,10 @@ export const Skills = () => {
     const [category, setCategory] = useState(categories[0])
 
     return (
-        <div id='skills' className="min-h-screen relative  mt-12 md:mt-0 sm:mx-4 md:mx-0 xl:my-20 2xl:my-0 sm:pt-8 sm:pb-28 bg-teal-700/7 text-teal-700">
+        <div id='skills' className="min-h-screen relative  mt-12 md:mt-0 sm:mx-4 md:mx-0 xl:my-20 2xl:my-0 sm:pt-8 pb-4 sm:pb-24 bg-teal-700/7 text-teal-700">
             <div class="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent"></div>
 
-            <h2 className="text-4xl font-semibold sm:text-6xl text-center sm:pt-0 pt-12 mt-18">Skills</h2>
+            <h2 className="text-4xl font-semibold sm:text-6xl text-center sm:pt-0 pt-18 mt-18">Skills</h2>
 
             <div className="md:w-1/2 overflow-x-auto scroll-hide lg:w-1/3 sm:mx-auto mx-6 mt-8 bg-white dark:bg-grey-800 p-2 flex justify-between items-center gap-3 rounded-md">
                 {categories.map((c, i) => (
@@ -64,7 +64,7 @@ export const Skills = () => {
                     </div>
                 ))}
             </div>
-            <div className="absolute -bottom-6 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent"></div>
+            <div className="absolute sm:-bottom-2 -bottom-6 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent"></div>
         </div>
     )
 }

@@ -7,7 +7,7 @@ const myFont = localFont({ src: '/TAN-BUSTER.otf' })
 
 export const Hero = () => {
     return (
-        <section id="home" className="text-slate-600 sm:mt-0 mt-30 bg-teal-700/7 h-[110vh]">
+        <section id="home" className="text-slate-600 sm:pt-0 pt-16 bg-teal-700/7 h-[110vh]">
             <div className="container flex md:flex-row flex-col items-center pt-16">
                 {/* Left-Text */}
                 <div className="lg:flex-grow md:w-2/3 2xl:w-1/2 md:pr-16 flex flex-col md:items-center md:text-left sm:mb-16 sm:ml-15 md:mb-0 items-center text-center">
@@ -19,7 +19,7 @@ export const Hero = () => {
                         Sakshi Shetty
                     </h1>
 
-                    <div className="flex items-baseline sm:w-110 gap-2 mt-3">
+                    <div className="flex items-baseline sm:w-110 gap-2 mt-3 ml-6 sm:ml-0">
                         <h2 className="text-base md:text-2xl 2xl:text-3xl text-slate-900 font-medium whitespace-nowrap">
                             I am into
                         </h2>
@@ -37,9 +37,9 @@ export const Hero = () => {
                     </div>
                 </div>
                 {/* Right-Video */}
-                <div className="relative lg:w-[32rem] 2xl:w-[33rem] md:w-2/3 w-[22.5rem]  ">
+                <div className="relative lg:w-[32rem] 2xl:w-[33rem] md:w-2/3 w-[22.5rem] pl-6 sm:pl-0">
                     <video
-                        className="object-cover sm:mt-33 h-[26rem] sm:h-[24rem] 2xl:h-[40rem] w-[27rem] sm:w-[24rem] -z-50 rounded-full "
+                        className="object-cover sm:mt-33 h-[20rem] sm:h-[24rem] 2xl:h-[24rem] w-[20rem] sm:w-[24rem] -z-50 rounded-full"
                         autoPlay
                         loop
                         muted
@@ -61,7 +61,7 @@ export const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute -bottom-16 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent"></div>
+            <div className="absolute -bottom-20 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent"></div>
         </section>
     )
 }
