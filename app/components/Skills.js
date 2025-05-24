@@ -34,7 +34,7 @@ export const Skills = () => {
 
     return (
         <div id='skills' className="min-h-screen relative  mt-12 md:mt-0 sm:mx-4 md:mx-0 xl:my-20 2xl:my-0 sm:pt-8 pb-4 sm:pb-24 bg-teal-700/7 text-teal-700">
-            <div class="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent"></div>
+            <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent"></div>
 
             <h2 className="text-4xl font-semibold sm:text-6xl text-center sm:pt-0 pt-18 mt-18">Skills</h2>
 

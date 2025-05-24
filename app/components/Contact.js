@@ -1,33 +1,60 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Contact = () => {
+  const blockedEmail = "shettysakshi2002@gmail.com";
+
+  const validateEmail = (email) => {
+    // Simple regex for email validation
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const name = e.target.name.value;
-    const email = e.target.email.value;
-    const message = e.target.message.value;
+    const name = e.target.name.value.trim();
+    const email = e.target.email.value.trim();
+    const message = e.target.message.value.trim();
 
-    const res = await fetch('/api/send', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, message }),
-    });
+    if (!name || !email || !message) {
+      toast.error('All fields are required!');
+      return;
+    }
 
-    if (res.ok) {
-      alert('Message sent successfully!');
-      e.target.reset();
-    } else {
-      alert('Something went wrong.');
+    if (!validateEmail(email)) {
+      toast.error('Please enter a valid email address!');
+      return;
+    }
+
+    if (email.toLowerCase() === blockedEmail.toLowerCase()) {
+      toast.error('This email is not allowed.');
+      return;
+    }
+
+    try {
+      const res = await fetch('/api/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (res.ok) {
+        toast.success('Message sent successfully!');
+        e.target.reset();
+      } else {
+        toast.error('Something went wrong while sending your message.');
+      }
+    } catch (err) {
+      toast.error('Network error or server is unreachable.');
     }
   };
 
   return (
     <section id="contact" className="text-teal-700 body-font relative">
-      {/* Heading */}
+      <ToastContainer position="bottom-right" autoClose={4000} hideProgressBar />
       <h2 className="text-4xl font-semibold sm:text-6xl mb-12 sm:mb-1 text-center w-full sm:pt-20">Contact Me</h2>
       <div className="px-5 mx-auto flex justify-between sm:flex-nowrap flex-wrap">
-        {/* Left: Video */}
         <div className="lg:w-[30rem] md:w-1/2 w-5/6">
           <video
             className="object-contain rounded sm:h-[30rem] w-[27rem] ml-8 sm:ml-20"
@@ -40,7 +67,6 @@ export const Contact = () => {
           </video>
         </div>
 
-        {/* Contact Form */}
         <form
           onSubmit={handleSubmit}
           className="lg:w-[47%] 2xl:w-[43%] md:w-1/2 bg-white flex flex-col sm:mr-8 2xl:mr-28 w-full md:py-2 mt-8 md:mt-4 mb-9"
@@ -54,7 +80,6 @@ export const Contact = () => {
               type="text"
               id="name"
               name="name"
-              required
               className="w-full bg-white rounded border border-teal-900 focus:border-teal-700 focus:ring-2 focus:ring-teal-700/30 text-base outline-none text-teal-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
@@ -64,7 +89,6 @@ export const Contact = () => {
               type="email"
               id="email"
               name="email"
-              required
               className="w-full bg-white rounded border border-teal-900 focus:border-teal-700 focus:ring-2 focus:ring-teal-700/30 text-base outline-none text-teal-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
@@ -73,7 +97,6 @@ export const Contact = () => {
             <textarea
               id="message"
               name="message"
-              required
               className="w-full bg-white rounded border border-teal-900 focus:border-teal-700 focus:ring-2 focus:ring-teal-700/30 h-32 text-base outline-none text-teal-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             />
           </div>

@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa'
 export const About = () => {
     return (
         <section id="about" className="text-teal-700 flex flex-col mt-12 items-center justify-center ">
-            {/* <div class="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-teal-700/7 to-transparent"></div> */}
+            {/* <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-teal-700/7 to-transparent"></div> */}
             {/* Heading */}
             <h1 className="text-4xl sm:text-6xl font-semibold text-center mt-12 sm:mt-28">About Me</h1>
 
