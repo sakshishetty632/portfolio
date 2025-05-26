@@ -163,7 +163,7 @@ export const Projects = () => {
                                         <img className="h-[200px] w-full object-cover rounded-lg object-center" src={card.img} alt={card.title} />
 
                                         <div className="absolute top-0 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-150 ease-linear bg-teal-900/70 w-full h-full rounded-lg flex items-center gap-4 justify-center">
-                                            <Link href={card.githubLink} target="_blank" className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
+                                            <Link href={card.liveLink} target="_blank" className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
                                                 <BiLinkExternal size={20} />
                                             </Link>
                                             <Link href={card.githubLink} target="_blank" className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
