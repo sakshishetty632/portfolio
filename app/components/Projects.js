@@ -159,10 +159,10 @@ export const Projects = () => {
                                 className="w-full px-2 flex-shrink-0"
                             >
                                 <div className="relative h-full rounded-lg overflow-hidden bg-white">
-                                    <div className="m-2 relative group">
+                                    <div className="m-2 relative group" tabIndex={-1}>
                                         <img className="h-[200px] w-full object-cover rounded-lg object-center" src={card.img} alt={card.title} />
 
-                                        <div className="absolute top-0 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-150 ease-linear bg-teal-900/70 w-full h-full rounded-lg flex items-center gap-4 justify-center">
+                                        <div className="absolute top-0 scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform origin-left duration-150 ease-linear bg-teal-900/70 w-full h-full rounded-lg flex items-center gap-4 justify-center">
                                             <Link href={card.liveLink} target="_blank" className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
                                                 <BiLinkExternal size={20} />
                                             </Link>
