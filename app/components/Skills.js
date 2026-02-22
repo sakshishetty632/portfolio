@@ -21,7 +21,7 @@ const skills = [
     { name: 'Git', icon: 'https://img.icons8.com/color/144/git.png', category: 'Others' },
     { name: 'Github', icon: 'https://img.icons8.com/glyph-neue/144/github.png', category: 'Others' },
     { name: 'Postman', icon: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/144/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png', category: 'Others' },
-    { name: 'Vercel', icon: 'https://static-00.iconduck.com/assets.00/vercel-icon-512x449-3422jidz.png', category: 'Others' },
+    { name: 'Vercel', icon: 'https://img.icons8.com/ios_filled/1200/vercel.jpg', category: 'Others' },
     { name: 'Render', icon: 'https://img.icons8.com/fluency/144/cloud.png', category: 'Others' }
 ];
 
