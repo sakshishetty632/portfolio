@@ -23,8 +23,8 @@ const skills = [
     { name: 'Postman', icon: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/144/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png', category: 'Tools & DevOps' },
     { name: 'AWS', icon: 'https://img.icons8.com/color/144/amazon-web-services.png', category: 'Tools & DevOps' },
     { name: 'Jenkins', icon: 'https://img.icons8.com/color/144/jenkins.png', category: 'Tools & DevOps' },
-    { name: 'Black Duck', icon: '/url', category: 'Tools & DevOps' },
-    { name: 'SonarQube', icon: '/url/', category: 'Tools & DevOps' },
+    { name: 'Black Duck', icon: '/Skills/BlackDuck.png', category: 'Tools & DevOps' },
+    { name: 'SonarQube', icon: '/Skills/SonarQube.png', category: 'Tools & DevOps' },
     { name: 'Vercel', icon: 'https://img.icons8.com/ios_filled/1200/vercel.jpg', category: 'Tools & DevOps' },
     { name: 'Render', icon: 'https://img.icons8.com/fluency/144/cloud.png', category: 'Tools & DevOps' }
 ];
