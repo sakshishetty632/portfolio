@@ -18,13 +18,15 @@ const skills = [
     { name: 'Bootstrap', icon: 'https://img.icons8.com/color/144/bootstrap.png', category: 'Frontend' },
 
 
-    { name: 'Git', icon: 'https://img.icons8.com/color/144/git.png', category: 'Tools & DevOps' },
-    { name: 'Github', icon: 'https://img.icons8.com/glyph-neue/144/github.png', category: 'Tools & DevOps' },
-    { name: 'Postman', icon: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/144/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png', category: 'Tools & DevOps' },
-    { name: 'AWS', icon: 'https://img.icons8.com/color/144/amazon-web-services.png', category: 'Tools & DevOps' },
-    { name: 'Jenkins', icon: 'https://img.icons8.com/color/144/jenkins.png', category: 'Tools & DevOps' },
-    { name: 'Vercel', icon: 'https://img.icons8.com/ios_filled/1200/vercel.jpg', category: 'Tools & DevOps' },
-    { name: 'Render', icon: 'https://img.icons8.com/fluency/144/cloud.png', category: 'Tools & DevOps' }
+    { name: 'Git', icon: 'https://img.icons8.com/color/144/git.png', category: 'Others' },
+    { name: 'Github', icon: 'https://img.icons8.com/glyph-neue/144/github.png', category: 'Others' },
+    { name: 'Postman', icon: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/144/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png', category: 'Others' },
+    { name: 'AWS', icon: 'https://img.icons8.com/color/144/amazon-web-services.png', category: 'Others' },
+    { name: 'Jenkins', icon: 'https://img.icons8.com/color/144/jenkins.png', category: 'Others' },
+    { name: 'Black Duck', icon: '', category: 'Others' },
+    { name: 'SonarQube', icon: '', category: 'Others' },
+    { name: 'Vercel', icon: 'https://img.icons8.com/ios_filled/1200/vercel.jpg', category: 'Others' },
+    { name: 'Render', icon: 'https://img.icons8.com/fluency/144/cloud.png', category: 'Others' }
 ];
 
 
