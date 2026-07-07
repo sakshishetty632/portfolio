@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 
 const skills = [
     { name: 'Java', icon: 'https://img.icons8.com/color/144/java-coffee-cup-logo--v1.png', category: 'Backend' },
+    { name: 'Springboot', icon: 'https://img.icons8.com/color/144/spring-logo.png', category: 'Backend' },
+    { name: 'Python', icon: 'https://img.icons8.com/color/144/python--v1.png', category: 'Backend' },
     { name: 'C', icon: 'https://img.icons8.com/color/144/c-programming.png', category: 'Backend' },
     { name: 'C++', icon: 'https://img.icons8.com/color/144/c-plus-plus-logo.png', category: 'Backend' },
-    { name: 'Python', icon: 'https://img.icons8.com/color/144/python--v1.png', category: 'Backend' },
-    { name: 'Springboot', icon: 'https://img.icons8.com/color/144/spring-logo.png', category: 'Backend' },
     { name: 'MySQL', icon: 'https://img.icons8.com/fluency/144/mysql-logo.png', category: 'Backend' },
     { name: 'MongoDB', icon: 'https://img.icons8.com/color/144/mongodb.png', category: 'Backend' },
 
@@ -18,11 +18,13 @@ const skills = [
     { name: 'Bootstrap', icon: 'https://img.icons8.com/color/144/bootstrap.png', category: 'Frontend' },
 
 
-    { name: 'Git', icon: 'https://img.icons8.com/color/144/git.png', category: 'Others' },
-    { name: 'Github', icon: 'https://img.icons8.com/glyph-neue/144/github.png', category: 'Others' },
-    { name: 'Postman', icon: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/144/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png', category: 'Others' },
-    { name: 'Vercel', icon: 'https://img.icons8.com/ios_filled/1200/vercel.jpg', category: 'Others' },
-    { name: 'Render', icon: 'https://img.icons8.com/fluency/144/cloud.png', category: 'Others' }
+    { name: 'Git', icon: 'https://img.icons8.com/color/144/git.png', category: 'Tools & DevOps' },
+    { name: 'Github', icon: 'https://img.icons8.com/glyph-neue/144/github.png', category: 'Tools & DevOps' },
+    { name: 'Postman', icon: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/144/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png', category: 'Tools & DevOps' },
+    { name: 'AWS', icon: 'https://img.icons8.com/color/144/amazon-web-services.png', category: 'Tools & DevOps' },
+    { name: 'Jenkins', icon: 'https://img.icons8.com/color/144/jenkins.png', category: 'Tools & DevOps' },
+    { name: 'Vercel', icon: 'https://img.icons8.com/ios_filled/1200/vercel.jpg', category: 'Tools & DevOps' },
+    { name: 'Render', icon: 'https://img.icons8.com/fluency/144/cloud.png', category: 'Tools & DevOps' }
 ];
 
 
