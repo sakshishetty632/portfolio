@@ -18,15 +18,15 @@ const skills = [
     { name: 'Bootstrap', icon: 'https://img.icons8.com/color/144/bootstrap.png', category: 'Frontend' },
 
 
-    { name: 'Git', icon: 'https://img.icons8.com/color/144/git.png', category: 'Others' },
-    { name: 'Github', icon: 'https://img.icons8.com/glyph-neue/144/github.png', category: 'Others' },
-    { name: 'Postman', icon: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/144/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png', category: 'Others' },
-    { name: 'AWS', icon: 'https://img.icons8.com/color/144/amazon-web-services.png', category: 'Others' },
-    { name: 'Jenkins', icon: 'https://img.icons8.com/color/144/jenkins.png', category: 'Others' },
-    { name: 'Black Duck', icon: '', category: 'Others' },
-    { name: 'SonarQube', icon: '', category: 'Others' },
-    { name: 'Vercel', icon: 'https://img.icons8.com/ios_filled/1200/vercel.jpg', category: 'Others' },
-    { name: 'Render', icon: 'https://img.icons8.com/fluency/144/cloud.png', category: 'Others' }
+    { name: 'Git', icon: 'https://img.icons8.com/color/144/git.png', category: 'Tools & DevOps' },
+    { name: 'Github', icon: 'https://img.icons8.com/glyph-neue/144/github.png', category: 'Tools & DevOps' },
+    { name: 'Postman', icon: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/144/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png', category: 'Tools & DevOps' },
+    { name: 'AWS', icon: 'https://img.icons8.com/color/144/amazon-web-services.png', category: 'Tools & DevOps' },
+    { name: 'Jenkins', icon: 'https://img.icons8.com/color/144/jenkins.png', category: 'Tools & DevOps' },
+    { name: 'Black Duck', icon: '/url', category: 'Tools & DevOps' },
+    { name: 'SonarQube', icon: '/url/', category: 'Tools & DevOps' },
+    { name: 'Vercel', icon: 'https://img.icons8.com/ios_filled/1200/vercel.jpg', category: 'Tools & DevOps' },
+    { name: 'Render', icon: 'https://img.icons8.com/fluency/144/cloud.png', category: 'Tools & DevOps' }
 ];
 
 
@@ -42,9 +42,9 @@ export const Skills = () => {
 
             <h2 className="text-4xl font-semibold sm:text-6xl text-center sm:pt-0 pt-18 mt-18">Skills</h2>
 
-            <div className="md:w-1/2 overflow-x-auto scroll-hide lg:w-1/3 sm:mx-auto mx-6 mt-8 bg-white dark:bg-grey-800 p-2 flex justify-between items-center gap-3 rounded-md">
+            <div className="w-auto mx-6 sm:mx-auto sm:w-full sm:max-w-lg mt-8 bg-white dark:bg-grey-800 p-2 flex justify-between items-center gap-3 rounded-md overflow-x-auto scroll-hide">
                 {categories.map((c, i) => (
-                    <span key={i} onClick={() => setCategory(c)} className={`p-1.5 md:p-2 text-sm md:text-base w-full text-center cursor-pointer rounded-md ${category.toLowerCase() === c.toLowerCase() ? "bg-teal-900 text-white" : "bg-white dark:bg-grey-800 hover:bg-teal-700/10 hover:dark:bg-grey-900"} transition-all capitalize`}>{c}</span>
+                    <span key={i} onClick={() => setCategory(c)} className={`p-1.5 md:p-2 text-sm md:text-base w-full text-center whitespace-nowrap cursor-pointer rounded-md ${category.toLowerCase() === c.toLowerCase() ? "bg-teal-900 text-white" : "bg-white dark:bg-grey-800 hover:bg-teal-700/10 hover:dark:bg-grey-900"} transition-all capitalize`}>{c}</span>
                 ))}
             </div>
 
